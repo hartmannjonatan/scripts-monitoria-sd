@@ -1,0 +1,1 @@
+compile_quartus --toplevel decodificadorBCD7Seg_case --simulate --no_gui --testbench /home/jonatan/Documentos/UFSC/MONITORIA_SD/AP1/testbenchs/dec_case_tb.vhd --testbench_entity dec_case_tb

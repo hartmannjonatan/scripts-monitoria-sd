@@ -1,0 +1,77 @@
+{
+    "type": "object",
+    "properties": {
+        "grupo": {
+            "type": "object",
+            "properties": {
+                "nome": {
+                    "type": "string"
+                },
+                "alunos": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "nome": {
+                                "type": "string"
+                            },
+                            "matricula": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "minItems": 1,
+                    "maxItems": 3,
+                    "uniqueItems": true
+                }
+            }
+        },
+        "quartus": {
+            "type": "object",
+            "properties": {
+                "os": {
+                    "type": "string"
+                },
+                "versao": {
+                    "type": "string"
+                },
+                "fpga": {
+                    "type": "object",
+                    "properties": {
+                        "familia": {
+                            "type": "string"
+                        },
+                        "dispositivo": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "utilizacao": {
+            "type": "object",
+            "properties": {
+                "total combinational functions" : {
+                    "type": "number"
+                },
+                "dedicated logic registers" : {
+                    "type": "number"
+                },
+                "total pins" : {
+                    "type": "number"
+                }
+            }
+        },
+        "atraso": {
+            "type": "object",
+            "properties": {
+                "Fmax": {
+                    "type": "number"
+                },
+                "unidade": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
